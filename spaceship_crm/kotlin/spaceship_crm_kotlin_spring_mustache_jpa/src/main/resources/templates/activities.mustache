@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activities</title>
+</head>
+<body>
+
+    <a href="logout">LogOut</a>
+
+    <table>
+        {{#activities.length}}
+            {{#activities}}
+                <tr>
+                    <td>{{firstName}}</td>
+                    <td>{{lastName}}</td>
+                    <td>{{activityName}}</td>
+                    <td>{{start}}</td>
+                    <td>{{end}}</td>
+                </tr>
+            {{/activities}}
+        {{/activities.length}}
+        {{^activities.length}}
+            <tr>
+                <td>Durduno</td>
+                <td>Craspertson</td>
+                <td>VIP pass</td>
+            </tr>
+        {{/activities.length}}
+
+    <table>
+    <a href="addusertoactivity">Add User To Activity</a>
+</body>
+</html>

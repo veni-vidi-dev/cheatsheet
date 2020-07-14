@@ -1,0 +1,13 @@
+/**
+ * Author veni.vidi.dev (veni.vidi.dev@gmail.com)
+ */
+package frm.entity
+
+import scala.beans.BeanProperty
+
+case class UserInfo (
+  @BeanProperty id: Long,
+  @BeanProperty phone: String,
+  @BeanProperty address: String,
+  @BeanProperty userId: Long
+)

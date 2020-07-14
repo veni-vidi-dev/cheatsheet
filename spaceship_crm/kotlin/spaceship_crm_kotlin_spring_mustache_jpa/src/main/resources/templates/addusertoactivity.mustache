@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add User Form</title>
+</head>
+<body>
+
+<a href="activities">View All</a><br/>
+
+<h3>Add User To Activity</h3>
+<form action="add" method="post" modelAttribute="userActivity">
+    <table>
+        <tr>
+            <td><label path="activityId">Activity: </label></td>
+            <td>
+                <select path="activity" name="activity" id="activity" style="width:155px">
+                    {{#activities}}
+                        <option value="{{id}}">
+                            {{name}}
+                        </option>
+                      {{/activities}}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label path="userId">User: </label></td>
+            <td>
+                <select path="user" name="user" name="id" style="width:155px">
+                    {{#users}}
+                        <option value="{{id}}">
+                            {{firstName}} {{lastName}}
+                        </option>
+                      {{/users}}
+                </select>
+            </td>
+        </tr>
+
+        <tr><td colspan="2"><input type="submit" value="Add"/></td></tr>
+    </table>
+</form>
+
+</body>
+</html>
