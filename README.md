@@ -1,6 +1,5 @@
 # Cheatsheet
-Code examples in Java, Scala, Kotlin
-Currently contains basic structure.
+Code examples. Java, Scala, Kotlin.
 
 
 # Work In Progress. 
